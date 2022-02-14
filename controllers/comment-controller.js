@@ -31,7 +31,7 @@ const commentController = {
         }
         return Pizza.findOneAndUpdate(
           { _id: params.pizzaId },
-          { $pull: { comments: params.commentId } },
+          { $pull: { comments: params.commentid } },
           { new: true }
         );
       })
